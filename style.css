@@ -7,3 +7,20 @@
 .projects{display:grid;gap:12px}.project{display:grid;grid-template-columns:70px 1fr;gap:22px;border:1px solid var(--line);padding:26px;border-radius:10px;background:var(--panel)}.project:hover{border-color:#354457}.project-no{font:600 13px "JetBrains Mono";color:var(--accent)}.project h3{font-size:20px;margin-bottom:5px}.cert{display:flex;align-items:center;gap:25px;border:1px solid var(--line);background:var(--bg);padding:30px;border-radius:12px}.cert-badge{display:grid;place-items:center;width:82px;height:82px;border:1px solid var(--accent);border-radius:12px;color:var(--accent);font:700 20px "JetBrains Mono";flex:none}.note{margin-top:16px;color:#687588;font-size:12px}.contact{padding-bottom:80px}.contact>p{font-size:17px;margin-bottom:30px}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.contact-grid a{padding:22px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}.contact-grid a:hover{border-color:var(--accent)}.contact-grid small{display:block;color:var(--muted);font:11px "JetBrains Mono";text-transform:uppercase;margin-bottom:5px}.contact-grid strong{font-size:14px;word-break:break-word}footer{border-top:1px solid var(--line);padding:25px 6%;display:flex;justify-content:space-between;color:#657184;font-size:12px}
 @media(max-width:850px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:70px}.terminal{display:none}.about-grid,.cards,.contact-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.section{padding-top:75px;padding-bottom:75px}}
 @media(max-width:560px){.about-grid,.cards,.contact-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.actions{flex-direction:column}.btn{text-align:center}.quick-links{flex-wrap:wrap}.project{grid-template-columns:1fr;gap:5px}footer{flex-direction:column;gap:8px}}
+.project-links{
+  margin-top:18px;
+}
+
+.project-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  color:var(--accent);
+  font:600 12px "JetBrains Mono";
+  transition:.2s;
+}
+
+.project-links a:hover{
+  color:var(--text);
+  transform:translateX(2px);
+}
